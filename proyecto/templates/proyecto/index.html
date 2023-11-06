@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <style>
+.myButton {
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #5e00f5 5%, #010408 100%);
+	background-color:#5e00f5;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #010408 5%, #5e00f5 100%);
+	background-color:#010408;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.myButton2 {
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #f70000 5%, #010408 100%);
+	background-color:#f70000;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.myButton2:hover {
+	background:linear-gradient(to bottom, #010408 5%, #f70000 100%);
+	background-color:#010408;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+    </style>
+</head>
+<body>
+    <h1>Hola, Bienvenido a la web</h1>
+    <a href="{% url 'info_user_agent' %}" class="myButton">User agent info</a>
+    <a href="{% url 'info_dispositivo' %}" class="myButton2">Mostrar info del dispositivo</a>
+</body>
+</html>
